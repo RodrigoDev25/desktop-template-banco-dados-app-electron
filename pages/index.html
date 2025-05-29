@@ -3,26 +3,33 @@
 
 <head>
   <meta charset="UTF-8" />
-  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+
+  <!-- Política de segurança para evitar scripts externos -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
   <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-  <title>Hello from Electron renderer!</title>
+
+  <title>Cadastro de Usuário</title>
 </head>
 
 <body>
   <h1>Criar usuário</h1>
 
+  <!-- Formulário com ID para ser acessado via JavaScript -->
   <form id="form-index">
-    <label for="input-nome"></label>
+    <!-- Label com texto para o campo de nome -->
+    <label for="input-nome">Nome:</label>
     <input type="text" id="input-nome" placeholder="Insira seu nome" required>
 
-    <label for="input-email"></label>
+    <!-- Label com texto para o campo de email -->
+    <label for="input-email">E-mail:</label>
     <input type="email" id="input-email" placeholder="Insira seu e-mail" required>
 
-    <button type="submit"> Cadastrar </button>
+    <!-- Botão que envia o formulário -->
+    <button type="submit">Cadastrar</button>
   </form>
 
-  <script src = "../scripts/script.js"> </script>
+  <!-- Link para o seu script JavaScript -->
+  <script src="../scripts/script.js"></script>
 </body>
 
 </html>
